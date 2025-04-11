@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TIC TAC TOE GAME</title>
+  <link rel="stylesheet" href="ttt.css" />
+</head>
+<body>
+  <!-- Winner/Draw Message Section -->
+  <div class="message_cont hide">
+    <p id="msg">WINNER</p>
+    <button id="new_game">NEW GAME</button>
+  </div>
+
+  <main>
+    <h1>TIC TAC TOE</h1>
+
+    <!-- Scoreboard -->
+    <div class="scoreboard">
+      <p>Player O: <span id="scoreO">0</span></p>
+      <p>Player X: <span id="scoreX">0</span></p>
+    </div>
+
+    <!-- Game Board -->
+    <div class="container">
+      <div class="game">
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+      </div>
+    </div>
+
+    <!-- Reset Button -->
+    <button id="reset_btn">RESET GAME</button>
+  </main>
+
+  <!-- Sound Effects -->
+  <audio id="clickSound" src="796088__randbsoundbites__finger-snap.wav"></audio>
+  <audio id="winSound" src="677859__el_boss__game-success-fanfare.wav"></audio>
+  <audio id="drawSound" src="727358__kanyonwyvern__disappointed-aww.wav"></audio>
+
+  <script src="ttt.js"></script>
+</body>
+</html>
